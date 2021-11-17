@@ -1,0 +1,45 @@
+{
+    "mysql": {
+		"host": "localhost",
+		"user": "root",
+		"pass": "123456",
+		"banco_dados": "mercadoDB",
+		"dialect": "mysql"
+	},
+	"produc_mysql":{
+		"host":"mybanco",
+		"user": "root",
+		"pass": "123456",
+		"banco_dados": "mercadoDB",
+		"dialect": "mysql"
+	}, 
+    "mongoo": {
+		"host": "127.0.0.1",
+		"user": "root",
+		"pass": "123456",
+		"db":"mercadoDB",
+        "port":"27017"
+    },
+		
+	"produc_mongoo":{
+		"host":"dbmongo",
+		"user": "root",
+		"pass": "123456",
+		"db":"mercadoDB",
+        "port":"27017"
+		
+	},
+	"servidor": {
+		"porta": 3000
+	},
+	"rotas": {
+		"produt":"/produto"
+		
+	},
+	"produt":{
+		"home":"/",
+		"lista":"/lista",
+		"addprodut":"/addproduto",
+		"pesquisid":"/pesquesid/:id"
+	}
+}

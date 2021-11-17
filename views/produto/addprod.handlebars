@@ -1,0 +1,57 @@
+<div class="container">
+    <div class="row pl-3 pt-3 ">
+        <div class="col-12">
+            <h2>Cadastro de Produto</h2>
+        </div>
+    </div>
+    <hr class="m-0" />
+
+
+
+    <form action="/produto/addproduto" method="post" class="form mt-4">
+        <fieldset >
+              <div class="form-row   ">
+                <div class="form-group col-4 ">
+                    <label for="txcdprod">Codígo</label>
+                    <input type="text" class="form-control" name="txcdprod" id="txcdprod" col="5" row="5"
+                        aria-describedby="helpId" required placeholder="Digite descrição.">
+                    <small id="txcdprod" class="form-text text-muted">Help text</small>
+                </div>
+            </div>
+
+            <div class="form-row ">
+                <div class="form-group col-6">
+                    <label for="txnmprod">Nome</label>
+                    <input type="text" class="form-control" name="txnmprod" id="txnmprod" aria-describedby="helpId"
+                        required placeholder="Digite nome produto.">
+                    <small id="txdcprod" class="form-text text-muted">Help text</small>
+                </div>
+            </div>
+
+            <div class="form-row ">
+                <div class="form-group col-6 ">
+                    <label for="txpcprod">Preço</label>
+                    <input type="text" class="form-control" name="txpcprod" id="txpcprod" aria-describedby="helpId"
+                        required placeholder="Digite  preço.">
+                    <small id="txdcprod" class="form-text text-muted hide">Help text</small>
+                </div>
+            </div>
+
+            <div class="form-row   ">
+                <div class="form-group col-6 ">
+                    <label for="txdcprod">Descrição</label>
+                    <textarea type="text" class="form-control" name="txdcprod" id="txdcprod" col="5" row="5"
+                        aria-describedby="helpId" required placeholder="Digite descrição."></textarea>
+                    <small id="txdcprod" class="form-text text-muted">Help text</small>
+                </div>
+            </div>
+
+            <div class="form-row  ">
+                <div class="form-group col-6  ">
+                    <button  class="btn btn-primary">Cadastrar</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+
+</div>

@@ -1,1 +1,6 @@
 node_module
+gulpfile.js
+.vscode
+node_modules
+docker-compose.yml
+zscss
