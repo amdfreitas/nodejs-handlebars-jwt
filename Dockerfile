@@ -1,4 +1,4 @@
-FROM node
+FROM node:12.0-alpine
 
 ENV  pwd =  /home/application
 ENV NODE_ENV=DEVELOPMENT
