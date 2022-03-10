@@ -3,4 +3,5 @@ gulpfile.js
 .vscode
 node_modules
 docker-compose.yml
+Dockerfile
 zscss

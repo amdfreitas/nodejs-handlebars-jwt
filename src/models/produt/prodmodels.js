@@ -1,29 +1,16 @@
 module.exports = (app) =>{
-    const produt = app.db.repositors.repprodut;
-    const Produt = produt.modprodut(); 
+    const produtcontrol = app.controller.produtcontroller
     modproduto = {
 
             viewprod: (req, res) =>{
 
                 res.render('produto/addprod');
             },
-            listprod: async (req, res) =>{
-
-                   
-                  await   Produt.find({})
-                                .then((data) =>{
-                                    res.render('produto/lista', {prod:data});
-                                })
-                                .catch(erro => console.log(erro)); 
-                
+            listprod: (req, res) =>{
+                produtcontrol.listaprodut(req,res);                
             },
             addprod: (req, res) =>{
-
-                  
-                   new Produt(req.body).save()
-                                .then(() => res.redirect('/produto/lista' ))
-                                .catch(erro => console.log(erro)); 
-                
+                produtcontrol.addprodut(req,res);                
             }
     }
 

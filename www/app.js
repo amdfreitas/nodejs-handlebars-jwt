@@ -6,8 +6,6 @@ const consign = require('consign');
 
 app.engine('handlebars',handlebars({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
-
-
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
