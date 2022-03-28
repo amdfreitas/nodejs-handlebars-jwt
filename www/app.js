@@ -16,7 +16,7 @@ consign({
     locale: 'pt-br',
     logger: console,
     verbose: true,
-    extensions: [ '.js', '.json','handlebars' ],
+    extensions: [ '.js', '.json','.handlebars' ],
     loggingType: 'info'
     })
     .include('db')

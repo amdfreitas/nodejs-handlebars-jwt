@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "node server.js",
     "debug": "nodemon server.js"
   },
@@ -20,8 +20,8 @@
   },
   "homepage": "https://github.com/amdfreitas/nodejs-handlebars-jwt#readme",
   "devDependencies": {
+    "axios": "^0.26.1",
     "coffeescript": "^2.5.1",
-    "nodemon": "^2.0.12",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-cli": "^2.3.0",
@@ -29,13 +29,17 @@
     "gulp-less": "^4.0.1",
     "gulp-sass": "^4.1.0",
     "gulp-twig": "^1.2.0",
-    "node-sass": "^5.0.0"
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.12",
+    "supertest": "^6.2.2"
   },
   "dependencies": {
+    "config": "^3.3.6",
     "consign": "^0.1.6",
     "express": "^4.17.1",
     "express-handlebars": "^5.3.3",
+    "jest": "^27.5.1",
     "mongoose": "^5.13.7",
-    "config": "^3.3.6"
+    "save-dev": "*"
   }
 }

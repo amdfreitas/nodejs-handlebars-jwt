@@ -1,4 +1,4 @@
-process.env.NODE_ENV = "produto";
+process.env.NODE_ENV = "development";
 const conf = require('config');
 const mongoose = require('mongoose');
 
@@ -17,10 +17,10 @@ const options = {
 if (conf.util.getEnv('NODE_ENV') === "development") {
     const url = 'mongodb://' + conf.get('mongoo.user') + ':' + conf.get('mongoo.pass') + '@' + conf.get('mongoo.host') + ':' + conf.get('mongoo.port') + '/' + conf.get('mongoo.db') + '?authSource=admin';
     //console.log(url);
-    conn = mongoose.connect(url,options);
+    conn = mongoose.connect(url, options);
 } else {
     const url = 'mongodb://' + conf.get('produc_mongoo.user') + ':' + conf.get('produc_mongoo.pass') + '@' + conf.get('produc_mongoo.host') + ':' + conf.get('mongoo.port') + '/' + conf.get('produc_mongoo.db') + '?authSource=admin';
-    conn = mongoose.connect(url,options);
+    conn = mongoose.connect(url, options);
 }
 
 mongoose.Promise = global.Promise;
